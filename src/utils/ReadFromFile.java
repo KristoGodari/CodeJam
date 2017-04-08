@@ -113,9 +113,24 @@ public class ReadFromFile {
 		}		
 		return result;
 	}
-	
-	
-	
+
+
+	/**
+	 * Returns an int array form file
+	 * @return int Array
+	 */
+	public ArrayList<Long> getFileContentAsLongArray(){
+		ArrayList<Long> result = new ArrayList<Long>();
+
+		for(int i=0; i<this.fileContent.length; i++){
+			result.add(Long.parseLong(this.fileContent[i]));
+		}
+		return result;
+	}
+
+
+
+
 	/**
 	 * @param int lineNumber
 	 * @return array char
